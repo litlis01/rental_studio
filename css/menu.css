@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px){
+
+
+ul.button {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+}
+
+ul.button li span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 7px;
+    background-color: #00a05f;
+    transition: 0.5s;
+}
+
+ul.button li {
+    font-size: 1.2rem;
+    color: #00a05f;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+ul.button.active li:nth-child(1) span {
+    transform: rotate(45deg) translate(7px, 8px);
+}
+
+ul.button.active li:nth-child(3) span {
+    transform: rotate(-45deg) translate(9px, -10px);
+}
+
+ul.button.active li:nth-child(2) span {
+    opacity: 0;
+} 
+
+
+
+
+nav.glonav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+    display: flex;
+    line-height: 3rem;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+
+nav.glonav.active {
+    transform: translateX(0);
+    animation: sample1 0.5s ease-in-out;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+    ul.button {
+        right: 30px;
+        top: 20px;
+    }
+}

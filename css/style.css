@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #00a05f;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fffff0;
+    box-shadow: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgbox {
+    font-size: 0;
+    line-height: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+body {
+    background-color: #fffff0;
+}
+
+#top {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 9999;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    padding: 10px 80px;
+    background-color:rgba(255, 255, 255, 0);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+.down {
+    background-color:rgba(255, 255, 255, 0.8);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+  }
+
+header h1 {
+    max-width: 380px;
+    margin-left: 15%;
+    text-align: left;
+    color: #00a05f;
+    font-size: 3rem;
+    background-image: url(../images/logo3.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding: 1rem 0 1rem 45px;
+}
+
+
+header h1 a {
+    color: #00a05f;
+}
+
+header nav.glonav {
+    width: 40%;
+}
+
+
+
+header nav ul.flex li {
+    display: block;
+    text-align: center;
+}
+
+header nav ul.flex li a{
+    font-size: 2rem;
+    color: #00a05f;
+}
+
+header nav ul.flex li a span {
+    transition-duration: 0.8s;
+    border-bottom: 5px solid #00a06000;
+}
+
+header nav ul.flex li a span:hover {
+    border-bottom: 5px solid #00a05f;
+}
+
+.info nav li:nth-child(1) a span,
+.room nav li:nth-child(2) a span,
+.schedule nav li:nth-child(3) a span,
+.contact nav li:nth-child(4) a span {
+    color: #00a05f;
+    border-bottom: 5px solid #00a05f;
+}
+
+.vegas, .vegas2 {
+    width: 50%;
+    height: 100vh;
+    z-index: -9999;
+}
+
+.index main div.flex p {
+    width: 30%;
+    height: auto;
+    margin-right: 10%;
+    margin-top: 130px;
+}
+
+div.map {
+    width: 50%;
+    margin-top: 110px;
+}
+
+div.map p img{
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* ここからinfo.html */
+
+main section.flex {
+    max-width: 1166px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+main section p.page-start {
+    width: 50%;
+    align-content: center;
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+
+main section div.info,
+main section div.info2{
+    width: 50%;
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+
+main section div.info h2 {
+    font-size: 3rem;
+    color: black;
+}
+
+main section div.info h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #00a05f;
+    margin-bottom: 30px;
+}
+
+main section div.info p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 4rem;
+}
+
+main section div.info div.sec1,
+main section div.info2 div.sec3 {
+    margin-bottom: 50px;
+}
+
+main section div.info2 h2 {
+    font-size: 3rem;
+    color: black;
+    text-align: right;
+}
+
+main section div.info2 h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #00a05f;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+main section div.info2 p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-align: right;
+    line-height: 4rem;
+}
+
+/* ここからroom */
+
+main nav {
+    max-width: 1206px;
+    margin: 0 auto;
+}
+
+main nav ul.flex {
+    padding: 160px 123px 0 123px;
+}
+
+main nav ul.flex li {
+    width: 20%;
+    text-align: center;
+}
+
+main nav ul.flex li a {
+    display: block;
+    color: #00a05f;
+    font-size: 2rem;
+    background-color: #ffff0000;
+}
+
+main nav ul.flex li a:hover {
+    background-color: #ffff002d;
+}
+
+.rooma nav li:nth-child(1) a,
+.roomb nav li:nth-child(2) a,
+.roomc nav li:nth-child(3) a {
+    background-color: #ffff002d;
+}
+
+
+main article {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    padding-top: 160px;
+}
+
+main article p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main article ul.flex {
+    padding: 100px 153px;
+}
+
+main article ul.flex li {
+    width: 30%;
+}
+
+/* ここからスケジュール */
+
+#calendar {
+    max-width: 1100px;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#calendar * {
+    z-index: 1;
+}
+
+.schedule main h2.page-start {
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    top: 130px;
+}
+
+
+/* ここからcontact */
+
+main.contact {
+    margin: 0 80px;
+}
+
+main.contact p {
+    width: 50%;
+} 
+
+.contact p img {
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    margin: 130px auto;
+}
+
+.contact form {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 130px 50px;
+}
+
+.contact form *{
+    display: block;
+    width: 100%;
+}
+
+.contact form div {
+    text-align: left;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contact form div.page-start span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00a05f;
+    text-align: center;
+}
+
+.contact form div input, textarea {
+    border: none;
+    border-radius: 5px;
+    box-shadow: #00a05f 0 2px 0px;
+    line-height: 3rem;
+}
+
+.contact form div.button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+footer {
+    text-align: right;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #00a05f;
+    padding-top: 180px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .flex {
+        display: block;
+    }
+
+    header h1 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 3rem;
+        background-size: 18px;
+        background-position: 10px 10px;
+    }
+
+    .vegas, .vegas2{
+        width: 100%;
+    }
+
+    .index main div.flex p, div.map p a{
+        display: none;
+    }
+
+    div.map {
+        width: 100%;
+    }
+
+    footer {
+        margin: 0;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+
+    header nav {
+        width: 100%;
+    }
+
+
+
+.info main section.flex {
+    display: flex;
+}
+
+.room main ul.flex {
+    display: flex;
+}
+
+.room main article ul.flex{
+    display: block;
+    padding: 50px 153px;
+}
+
+.room main article ul.flex li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+main.contact div.flex p {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.contact main.contact p img {
+    margin-top: 30px;
+}
+
+main.contact form {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+    header h1 {
+        font-size: 2rem;
+        background-size: 15px;
+        background-position: 10px 10px;
+    }
+
+    .info main section.flex {
+        display: block;
+    }
+
+    main section.flex p.page-start {
+        width: 100%;
+        margin: 0;
+        padding: 100px 20px 0 20px;
+    }
+
+    main section div.info, main section div.info2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main section div.info2 h2, main section div.info2 h3, main section div.info2 p {
+        text-align: left;
+    }
+
+    .room main ul.flex {
+        display: block;
+        padding-top: 100px;
+    }
+
+    .room main ul.flex li {
+        width: 100%;
+    }
+
+    .room main ul.flex li a {
+        text-align: center;
+    }
+
+    .room main article {
+        padding: 100px 20px 0 20px;
+    }
+
+    .room main article ul.flex {
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+
+    main.contact {
+        margin: 0 20px;
+    }
+
+    .contact p img {
+        margin: 30px auto;
+    }
+
+    .contact form {
+        padding: 50px;
+    }
+}
